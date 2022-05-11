@@ -1,5 +1,5 @@
 ### Vitaj! Moja kópia hry wordle
-### <center>https://impeterk.github.io/resources/words/index.html/center>
+### <center>https://impeterk.github.io/resources/words/index.html<center>
 ---
 ![screenshot](md.JPG)
 
