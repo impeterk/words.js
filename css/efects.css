@@ -1,0 +1,18 @@
+.animate__animated.animate__flipInX {
+    --animate-duration: 500ms;
+    --animate-delay: 500;
+  }
+  
+  /* This changes all the animations globally 
+  :root {
+    --animate-duration: 500ms;
+    --animate-delay: 500;
+  }*/
+.animate__animated.animate__wobble {
+    --animate-duration: 1s;
+    --animate-delay: 500ms;
+}
+.row {
+    --animate-duration: 750ms;
+    --animate-delay: 200ms;
+}

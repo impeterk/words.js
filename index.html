@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Venované Natálií. Mojej ohladuplnej a chápavej priateľke -->
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/wordle-icon-green.png" type="image/x-icon">
+
+    <title>Moja kópia hry wordle</title>
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/efects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script defer src="js/dictionary.js"></script>
+    <script defer src="js/animacie.js"></script>
+    <script defer src="js/slovka.js"></script>
+    <script src="https://kit.fontawesome.com/d3cce1be66.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <a href="https://github.com/impeterk/impeterk.github.io" target="_blank" ><i class="fa-brands fa-github"></i></a>
+        <a id="rules">Nápoveda<br>Ako hrať</a> 
+        <a id="refresh"><i class="fa-solid fa-rotate-right"></i></a>
+        <p id='ahoj'>Vitaj! Moja kópia hry wordle</p>  
+    </header>
+
+    <div class="rules" id="rules-box">
+        <p>Uhádni podstatné meno na 5 písmen<br>Máš na to 6 pokusov</p>
+        <p>Hra je v Slovenskom jazyku a slovo hádaš bez diakritiky</p>
+        <p>Ak sa písmeno nachádza v slove, ale netrafil(a) si miesto vyfarbí sa na <span class="tile is-filled present">žlto</span></p>
+        <p>Ak si trafil(a) pozíciu písmena v slove, vyfarbí sa na <span class="tile is-filled correct">zeleno</span></p>
+        <p>Ak sa písmeno v slove nenachádza vyfarbí sa na <span class="tile is-filled wrong">sivo</span></p>
+        <p>Ak sa slovo nenachádza v slovníku, riadok sa zatrasie</p>
+        <p>(Klikni pre zatvorenie okna)</p>
+    </div>
+    <main class="board" id='board'>
+       
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+       
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+    
+        
+    </main>
+
+    <footer>
+        <section class="keyboard" id="keyboard">
+            <div class="firstrow">
+			    <button class="tile keys" id="q">q</button>
+			    <button class="tile keys" id="w">w</button>
+			    <button class="tile keys" id="e">e</button>
+			    <button class="tile keys" id="r">r</button>
+			    <button class="tile keys" id="t">t</button>
+			    <button class="tile keys" id="y">y</button>
+			    <button class="tile keys" id="u">u</button>
+			    <button class="tile keys" id="i">i</button>
+			    <button class="tile keys" id="o">o</button>
+			    <button class="tile keys" id="p">p</button>
+            </div>
+            <div class="secondrow">
+			    <button class="tile keys" id="a">a</button>
+			    <button class="tile keys" id="s">s</button>
+			    <button class="tile keys" id="d">d</button>
+			    <button class="tile keys" id="f">f</button>
+			    <button class="tile keys" id="g">g</button>
+			    <button class="tile keys" id="h">h</button>
+			    <button class="tile keys" id="j">j</button>
+			    <button class="tile keys" id="k">k</button>
+			    <button class="tile keys" id="l">l</button>
+            </div>
+            <div class="thirdrow">
+			    <button class="tile keys" id="z">z</button>
+			    <button class="tile keys" id="x">x</button>
+			    <button class="tile keys" id="c">c</button>
+			    <button class="tile keys" id="v">v</button>
+			    <button class="tile keys" id="b">b</button>
+			    <button class="tile keys" id="n">n</button>
+			    <button class="tile keys" id="m">m</button>
+            </div>
+            <div class="forthrow">
+			    <button class="tile keys" id="Enter">Enter</button>
+			    <button class="tile keys" id="Backspace"><<</button>
+            </div>
+		</section>
+    </footer>
+
+</body>
+
+</html>
+<!-- Shoutout to @Yablko za výborný príklad a videá. 
+     Shoutout to original author @Josh_Wardle -->

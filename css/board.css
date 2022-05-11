@@ -1,0 +1,98 @@
+.board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2%;
+}
+
+.row {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2%;
+}
+
+
+.tile {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsl(0, 0%, 35%);
+    background-color:hsl(0, 0%, 15%);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    border-radius: 15%;
+}
+
+.is-filled {
+    border-color: hsl(0, 0%, 75%);
+}
+
+.present {
+    border-color: hsl(60, 50%, 50%); 
+    background-color:hsl(60, 50%, 50%); 
+}
+
+.correct {
+    border-color: hsl(140, 50%, 50%); 
+    background-color:hsl(140, 50%, 50%);
+}
+
+.wrong {
+    border-color: hsl(0, 0%, 40%); 
+    background-color:hsl(0, 0%, 40%);
+}
+.keys {
+    color:hsl(0, 0%, 15%);
+    border-color: hsl(0, 0%, 75%); 
+    background-color:hsl(0, 0%, 75%);
+}
+.loser {
+    border-color: hsl(360, 50%, 50%); 
+    background-color:hsl(360, 50%, 50%);
+}
+
+
+
+@media only screen and (max-height: 768px) {
+    
+    .tile {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .board {
+        margin-right: 1rem;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 500px) {
+
+    .tile {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .board {
+        margin-right: 5%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .tile {
+        font-size: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .board {
+        margin-top: -20px;
+        margin-bottom: 5px;
+    }
+}
+
+
